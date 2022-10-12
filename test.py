@@ -20,14 +20,14 @@ yaw.frequency = f
 pitch.frequency = f
 
 #pwm = 
-
+list = [0.3, 0.4, 0.5, 0.6, 0.7]
 try :
     while(True):
             
         yaw.enable()
         pitch.enable()
     
-        for i in range (0.2,0.6,0.1):
+        for i in list:
         
             yaw.duty_cycle = i
             pitch.duty_cyle = i
