@@ -22,7 +22,7 @@ pitch.frequency = f
 pwm_list = [1400, 1500, 1600, 1500]
 dc_list = []
 for pwm in pwm_list :
-    list.append((pwm*(10**(-6)))/T)
+    dc_list.append((pwm*(10**(-6)))/T)
 
 yaw.enable()
 pitch.enable()
