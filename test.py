@@ -23,15 +23,14 @@ pitch.frequency = f
 list = [0.4, 0.5, 0.6]
 try :
     while(True):
-            
-        yaw.enable()
-        pitch.enable()
-    
         for i in list:
-        
+            yaw.enable()
+            pitch.enable()
             yaw.duty_cycle = i
             pitch.duty_cyle = i
             time.sleep(0.5)
+            yaw.disable()
+            pitch.disable()
     #yaw.duty_cycle = pwm/(T*100)
     #pitch.duty_cycle = pwm/(T*100)
     
