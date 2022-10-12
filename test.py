@@ -29,9 +29,9 @@ while(True):
       
             #yaw.duty_cycle = pwm/(T*100)
             #pitch.duty_cyle = pwm/(T*100)
-    yaw.duty_cycle = i
-    pitch.duty_cycle = i
-    time.sleep(1)
+        yaw.duty_cycle = i
+        pitch.duty_cycle = i
+        time.sleep(1)
             
     #yaw.duty_cycle = pwm/(T*100)
     #pitch.duty_cycle = pwm/(T*100)
