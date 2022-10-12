@@ -20,7 +20,7 @@ yaw.frequency = f
 pitch.frequency = f
 
 #pwm = 
-list = [0.4, 0.5, 0.6]
+list = [0.2, 0.8]
 try :
     while(True):
         for i in list:
