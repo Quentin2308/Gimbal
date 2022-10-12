@@ -19,17 +19,23 @@ pitch = PWM(0, 1)
 yaw.frequency = f
 pitch.frequency = f
 
-pwm = 
+#pwm = 
 
 try :
-  while(True):
+    while(True):
             
-    yaw.enable()
-    pitch.enable()
-  
-    yaw.duty_cycle = pwm/(T*100)
-    pitch.duty_cycle = pwm/(T*100)
+        yaw.enable()
+        pitch.enable()
     
-
+        for i in range (0.2,0.6,0.1):
+        
+            yaw.duty_cycle = i
+            pitch.duty_cyle = i
+            time.sleep(0.1)
+    #yaw.duty_cycle = pwm/(T*100)
+    #pitch.duty_cycle = pwm/(T*100)
+    
 except KeyboardInterrupt :
-  
+    yaw.close()
+    pitch.close()
+    print ("interruption par l'utilisateur")
