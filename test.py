@@ -27,8 +27,8 @@ try :
     while(True):
         for pwm in pwm_list :
       
-            yaw.duty_cycle = pwm/T
-            pitch.duty_cyle = pwm/T
+            yaw.duty_cycle = pwm/(T*100)
+            pitch.duty_cyle = pwm/(T*100)
             time.sleep(2)
             
     #yaw.duty_cycle = pwm/(T*100)
